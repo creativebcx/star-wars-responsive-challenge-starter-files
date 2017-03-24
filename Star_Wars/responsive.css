@@ -1,0 +1,30 @@
+.row {
+	max-width: 1000px;
+  	padding-top: 20px;
+  	padding-left: 20px;
+  	padding-right: 20px;
+  	margin: 0 auto;
+  	float: left;
+}
+
+.row::before,
+.row::after {
+  display: table;
+  content: '';
+}
+
+.col-4 {
+	width: 33.3%;
+}
+
+@media only screen and (max-width: 640px) {
+
+.col-4 {
+	width: 100%;
+	}
+
+.col-4 img {
+	width: 100%;
+}
+}
+
